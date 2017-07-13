@@ -1,0 +1,229 @@
+1.	>>> 12 / (4+1)
+2.4
+
+2.	>>> 26 ** 100
+3142930641582938830174357788501626427282669988762475256374173175398995908420104023465432599069702289330964075081611719197835869803511992549376
+
+3.	The content is repeated(listed) same amount of times
+>>> ['Monty', 'Python'] * 20
+['Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python', 'Monty', 'Python']
+>>> 3 * sent1
+['Call', 'me', 'Ishmael', '.', 'Call', 'me', 'Ishmael', '.', 'Call', 'me', 'Ishmael', '.']
+
+4.	>>> len(text2)
+141576
+>>> len(set(text2))
+6833
+
+5.	>>> lexical_diversity('humor')
+1.0
+>>> lexical_diversity('romance fiction')
+0.7333333333333333
+
+Did not get this question?? 
+In the example they have found the lexical diversity in a text we don’t have, and I believe you would have to specify both the text and the word as a category to get that answer?
+
+6.	>>> text2.dispersion_plot(["Elinor", "Marianne", "Edward", "Willoughby"])
+ [plot_picture]
+
+I do believe Elinor is the main character and that she has a good friend, Marianne.
+Based on those compared to when the men appears I would guess Elinor + Edward and Marianne + Willoughby 
+
+7.	>>> text5.collocations()
+wanna chat; PART JOIN; MODE #14-19teens; JOIN PART; PART PART;
+cute.-ass MP3; MP3 player; JOIN JOIN; times .. .; ACTION watches; guys
+wanna; song lasts; last night; ACTION sits; -...)...- S.M.R.; Lime
+Player; Player 12%; dont know; lez gurls; long time
+
+8.	len(set(text4))
+-	len count the words in text 4, then set take away all the duplicates and you get a number of distinct words in text 4.
+-	If you don’t use len in the expression all the words will appear instead of the count
+-	
+9.	a) >>> my_string='Æ æ a å edår'	
+
+>>> my_string
+'Æ æ a å edår'
+>>> print(my_string)
+Æ æ a å edår
+
+b)>>> my_string + my_string
+'Æ æ a å edårÆ æ a å edår'
+>>> my_string * 4
+'Æ æ a å edårÆ æ a å edårÆ æ a å edårÆ æ a å edår'
+
+>>> my_string + ' ' + my_string
+'Æ æ a å edår Æ æ a å edår'
+>>> (my_string + ' ') *4
+'Æ æ a å edår Æ æ a å edår Æ æ a å edår Æ æ a å edår '
+
+Had to check how it handled Norwegian letters ;)
+
+10.	'Æ æ a å EDÅR .  '.split()
+['Æ', 'æ', 'a', 'å', 'EDÅR]
+
+' '.join(my_string)
+'Æ æ a å EDÅR'
+
+11.	As string
+>>> phrase1=['the sun is allways shining']
+>>> phrase2=['on mondays']
+
+>>> phrase1 + phrase2
+['the sun is allways shining', 'on mondays']
+>>> phrase2 + phrase1
+['on mondays', 'the sun is allways shining']
+
+As list
+>>> phrase1 + phrase2
+['the', 'sun', 'is', 'allways', 'shining', 'on', 'mondays']
+>>> phrase2 + phrase1
+['on', 'mondays', 'the', 'sun', 'is', 'allways', 'shining']
+
+>>> len(phrase1) + len(phrase2)
+7
+>>> len(phrase1 + phrase2)
+7
+
+I believe it gives the same result, but will be easier when you are connecting a lot of lists/strings?
+
+12.	I don’t understand this question.
+In a) it seems like a string and the index seems wrong (maybe if this is the entire string and there are nothing at the last indexes) , in b) it seems like we are only asking for index 1, that would be ‘python’?
+
+13.	>>> sent1[2][2]
+'h'
+>>> sent1
+['Call', 'me', 'Ishmael', '.']
+It takes the third letter from the third word. Number three because the indexes start at 0.
+
+14.	>>> sent3
+['In', 'the', 'beginning', 'God', 'created', 'the', 'heaven', 'and', 'the', 'earth', '.']
+
+5 and 8
+
+>>> sent3[5]
+'the'
+>>> sent3[8]
+'the'
+>>>
+
+15.	>>> sorted(w for w in set(text5) if w.startswith('b'))
+['b', 'b-day', 'b/c', 'b4', 'babay', 'babble', 'babblein', 'babe', 'babes', 'babi', 'babies', 'babiess', 'baby', 'babycakeses', 'bachelorette', 'back', 'backatchya', 'backfrontsidewaysandallaroundtheworld', 'backroom', 'backup', 'bacl', 'bad', 'bag', 'bagel', 'bagels', 'bahahahaa', 'bak', 'baked', 'balad', 'balance', 'balck', 'ball', 'ballin', 'balls', 'ban', 'band', 'bandito', 'bandsaw', 'banjoes', 'banned', 'baord', 'bar', 'barbie', 'bare', 'barely', 'bares', 'barfights', 'barks', 'barn', 'barrel', 'base', 'bases', 'basically', 'basket', 'battery', 'bay', 'bbbbbyyyyyyyeeeeeeeee', 'bbiam', 'bbl', 'bbs', 'bc', 'be', 'beach', 'beachhhh', 'beam', 'beams', 'beanbag', 'beans', 'bear', 'bears', 'beat', 'beaten', 'beatles', 'beats', 'beattles', 'beautiful', 'because', 'beckley', 'become', 'bed', 'bedford', 'bedroom', 'beeeeehave', 'beeehave', 'been', 'beer', 'before', 'beg', 'begin', 'behave', 'behind', 'bein', 'being', 'beleive', 'believe', 'belive', 'bell', 'belly', 'belong', 'belongings', 'ben', 'bend', 'benz', 'bes', 'beside', 'besides', 'best', 'bet', 'betrayal', 'betta', 'better', 'between', 'beuty', 'bf', 'bi', 'biatch', 'bible', 'biebsa', 'bied', 'big', 'bigest', 'biggest', 'biiiatch', 'bike', 'bikes', 'bikini', 'bio', 'bird', 'birfday', 'birthday', 'bisexual', 'bishes', 'bit', 'bitch', 'bitches', 'bitdh', 'bite', 'bites', 'biyatch', 'biz', 'bj', 'black', 'blade', 'blah', 'blank', 'blankie', 'blazed', 'bleach', 'blech', 'bless', 'blessings', 'blew', 'blind', 'blinks', 'bliss', 'blocking', 'bloe', 'blood', 'blooded', 'bloody', 'blow', 'blowing', 'blowjob', 'blowup', 'blue', 'blueberry', 'bluer', 'blues', 'blunt', 'board', 'bob', 'bodies', 'body', 'boed', 'boght', 'boi', 'boing', 'boinked', 'bois', 'bomb', 'bone', 'boned', 'bones', 'bong', 'boning', 'bonus', 'boo', 'booboo', 'boobs', 'book', 'boom', 'boooooooooooglyyyyyy', 'boost', 'boot', 'bootay', 'booted', 'boots', 'booty', 'border', 'borderline', 'bored', 'boredom', 'boring', 'born', 'born-again', 'bosom', 'boss', 'bossy', 'bot', 'both', 'bother', 'bothering', 'bottle', 'bought', 'bounced', 'bouncer', 'bouncers', 'bound', 'bout', 'bouts', 'bow', 'bowl', 'box', 'boy', 'boyfriend', 'boys', 'bra', 'brad', 'brady', 'brain', 'brakes', 'brass', 'brat', 'brb', 'brbbb', 'bread', 'break', 'breaks', 'breath', 'breathe', 'bred', 'breeding', 'bright', 'brightened', 'bring', 'brings', 'bro', 'broke', 'brooklyn', 'brother', 'brothers', 'brought', 'brown', 'brrrrrrr', 'bruises', 'brunswick', 'brwn', 'btw', 'bucks', 'buddyyyyyy', 'buff', 'buffalo', 'bug', 'bugs', 'buh', 'build', 'builds', 'built', 'bull', 'bulls', 'bum', 'bumber', 'bummer', 'bumped', 'bumper', 'bunch', 'bunny', 'burger', 'burito', 'burned', 'burns', 'burp', 'burpin', 'burps', 'burried', 'burryed', 'bus', 'buses', 'bust', 'busted', 'busy', 'but', 'butt', 'butter', 'butterscotch', 'button', 'buttons', 'buy', 'buying', 'bwahahahahahahahahahaha', 'by', 'byb', 'bye', 'byeee', 'byeeee', 'byeeeeeeee', 'byeeeeeeeeeeeee', 'byes']
+
+16.	>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(10, 20))
+[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>> list(range(10, 20, 2))
+[10, 12, 14, 16, 18]
+>>> list(range(20, 10, -2))
+[20, 18, 16, 14, 12]
+
+17.	>>> text9.index('sunset')
+629
+>>> text9.concordance('sunset')
+Displaying 14 of 14 matches:
+E suburb of Saffron Park lay on the sunset side of London , as red and ragged 
+n , as red and ragged as a cloud of sunset . It was built of a bright brick th
+bered in that place for its strange sunset . It looked like the end of the wor
+ival ; it was upon the night of the sunset that his solitude suddenly ended . 
+he Embankment once under a dark red sunset . The red river reflected the red s
+st seemed of fiercer flame than the sunset it mirrored . It looked like a stre
+he passionate plumage of the cloudy sunset had been swept away , and a naked m
+der the sea . The sealed and sullen sunset behind the dark dome of St . Paul '
+ming with the colour and quality of sunset . The Colonel suggested that , befo
+gold . Up this side street the last sunset light shone as sharp and narrow as 
+of gas , which in the full flush of sunset seemed coloured like a sunset cloud
+sh of sunset seemed coloured like a sunset cloud . " After all ," he said , " 
+y and quietly , like a long , low , sunset cloud , a long , low house , mellow
+house , mellow in the mild light of sunset . All the six friends compared not
+
+The first one(two actually) as a sentence:
+>>> ' '.join(text9[621:644])
+'THE suburb of Saffron Park lay on the sunset side of London , as red and ragged as a cloud of sunset .'
+
+18.	>>> sorted(set(sent1 + sent2 + sent3 + sent4 + sent5 + sent6 + sent7 + sent8))
+['!', ',', '-', '.', '1', '25', '29', '61', ':', 'ARTHUR', 'Call', 'Citizens', 'Dashwood', 'Fellow', 'God', 'House', 'I', 'In', 'Ishmael', 'JOIN', 'KING', 'MALE', 'Nov.', 'PMing', 'Pierre', 'Representatives', 'SCENE', 'SEXY', 'Senate', 'Sussex', 'The', 'Vinken', 'Whoa', '[', ']', 'a', 'and', 'as', 'attrac', 'been', 'beginning', 'board', 'clop', 'created', 'director', 'discreet', 'earth', 'encounters', 'family', 'for', 'had', 'have', 'heaven', 'in', 'join', 'lady', 'lol', 'long', 'me', 'nonexecutive', 'of', 'old', 'older', 'people', 'problem', 'seeks', 'settled', 'single', 'the', 'there', 'to', 'will', 'wind', 'with', 'years']
+
+19.	The first one give you the distinct words sorted alphabetically, the secconword does the same but not distinct.
+
+20.	The .is upper will only find words where all the letters in the word is uppercase, while the oter will find every word that don’t contains only lowercase (all words starting with uppercase but the rest is lowercase). And guess all the not alphanumeric tokens will be included in the not w.islower?
+
+21.	>>> text2[-2:]
+['THE', 'END']
+
+22.	
+>>> fdist5 = FreqDist(w for w in text5 if len(w) == 4)
+>>> fdist5.most_common()
+[('JOIN', 1021), ('PART', 1016), ('that', 274), ('what', 183), ('here', 181), ('....', 170), ('have', 164), ('like', 156), ('with', 152), ('chat', 142), ('your', 137), ('good', 130), ('just', 125), ('lmao', 107), ('know', 103), ('room', 98), ('from', 92), ('this', 86), ('well', 81), ('back', 78), ('hiya', 78), ('they', 77), ('dont', 75), ('yeah', 75), ('want', 71), ('love', 60), ('guys', 58), ('some', 58), ('been', 57), ('talk', 56), ('nice', 52), ('time', 50), ('when', 48), ('haha', 44), ('make', 44), ('girl', 43), ('need', 43), ('U122', 42), ('MODE', 41), ('will', 40), ('much', 40), ('then', 40), ('over', 39), ('work', 38), ('were', 38), ('take', 37), ('U121', 36), ('U115', 36), ('song', 36), ('even', 35), ('does', 35), ('seen', 35), ('U156', 35), ('U105', 35), ('more', 34), ('damn', 34), ('only', 33), ('come', 33), ('hell', 29), ('long', 28), ('them', 28), ('name', 27), ('tell', 27), ('away', 26), ('sure', 26), ('look', 26), ('baby', 26), ('call', 26), ('play', 25), ('U110', 25), ('U114', 25), ('NICK', 24), ('down', 24), ('cool', 24), ('sexy', 23), ('many', 23), ('hate', 23), ('said', 23), ('last', 22), ('ever', 22), ('hear', 21), ('life', 21), ('live', 20), ('feel', 19), ('very', 19), ('mean', 19), ('give', 19), ('same', 19), ('must', 19), ('stop', 19), ('LMAO', 19), ('!!!!', 18), ('hugs', 18), ('What', 18), ('find', 18), ('cant', 18), ('left', 17), ('????', 17), ('shit', 17), ('nite', 17), ('busy', 17), ('hair', 17), ('lost', 17), ('U104', 17), ('fine', 16), ('real', 16), ('game', 16), ('fuck', 15), ('sits', 15), ('eyes', 15), ('lets', 15), ('heya', 15), ('kill', 15), ('read', 14), ('shut', 14), ('wait', 14), ('goes', 14), ('keep', 14), ('true', 14), ('pick', 13), ('free', 13), ('else', 13), ('near', 13), ('nope', 13), ('U168', 13), ('hope', 12), ('head', 12), ('male', 12), ('than', 12), ('gets', 12), ('cold', 12), ('hehe', 12), ('bout', 12), ('stay', 12), ('used', 12), ('awww', 12), ('told', 12), ('This', 12), ('U102', 12), ('doin', 11), ('kids', 11), ('perv', 11), ('wont', 11), ('face', 11), ('home', 11), ('year', 11), ('babe', 11), ('into', 11), ('yall', 11), ('.. .', 11), ('U119', 11), ('U107', 11), ('hard', 10), ('show', 10), ('U101', 10), ('once', 10), ('Well', 10), ('help', 10), ('mind', 10), ('Yeah', 10), ('week', 10), ('Liam', 10), ('U132', 10), ('pics', 9), ('such', 9), ('type', 9), ('best', 9), ('neck', 9), ('dang', 9), ('dead', 9), ('runs', 9), ('aint', 9), ('rock', 9), ('days', 9), ('mine', 9), ('book', 9), ('crap', 9), ('soon', 9), ('care', 9), ('full', 9), ('kiss', 9), ('hour', 9), ('nick', 9), ('sick', 9), ('; ..', 9), ('hmmm', 9), ('U139', 8), ('word', 8), ('heyy', 8), ('case', 8), ('wana', 8), ('hows', 8), ('went', 8), ('lady', 8), ('blue', 8), ('says', 8), ('suck', 8), ('made', 8), ('wife', 8), ('sang', 8), ('U144', 8), ('fast', 7), ('rule', 7), ('dude', 7), ('okay', 7), ('alot', 7), ('hand', 7), ('took', 7), ('wear', 7), ('Hiya', 7), ('kick', 7), ('ahhh', 7), ('dear', 7), ('That', 7), ('U108', 7), ('U169', 7), ('U129', 6), ('U116', 6), ('most', 6), ('thru', 6), ('U165', 6), ('list', 6), ('seem', 6), ('sing', 6), ('next', 6), ('done', 6), ('ride', 6), ('comp', 6), ('main', 6), ('))))', 6), ('goin', 6), ('U520', 6), ('pink', 6), ('poor', 6), ('gone', 6), ('oops', 6), ('knew', 6), ('<---', 6), ('ball', 6), ('send', 6), ('Song', 6), ('blah', 6), ('They', 6), ('part', 6), ('U103', 6), ('U120', 6), ('Last', 6), ('whos', 6), ('food', 6), ('U142', 6), ('sock', 6), ('U197', 6), ('legs', 5), ('fire', 5), ('warm', 5), ('late', 5), ('hang', 5), ('miss', 5), ('boys', 5), ('land', 5), ('nose', 5), ('lick', 5), ('caps', 5), ('wish', 5), ('U128', 5), ('came', 5), ('cali', 5), ('roll', 5), ('easy', 5), ('lose', 5), ('When', 5), ('soul', 5), ('luck', 5), ('also', 5), ('kool', 5), ('fall', 5), ('boss', 5), ('beer', 5), ('ohhh', 5), ('####', 5), ('wall', 5), ('Have', 5), ('meet', 5), ('till', 5), ('feet', 5), ('xbox', 5), ('idea', 5), ('heck', 5), ('joke', 5), ('fool', 5), ('felt', 5), ('yoko', 5), ('meds', 5), ('both', 5), ('Lime', 5), ('glad', 4), ('U133', 4), ('U126', 4), ('jerk', 4), ('ugly', 4), ('date', 4), ('ummm', 4), ('quit', 4), ('rest', 4), ('door', 4), ('none', 4), ('self', 4), ('pass', 4), ('line', 4), ('cute', 4), ('holy', 4), ('hook', 4), ('Like', 4), ('each', 4), ('open', 4), ('high', 4), ('ouch', 4), ('evil', 4), ('fart', 4), ('grrr', 4), ('pain', 4), ('pfft', 4), ('sigh', 4), ('shes', 4), ('ROOM', 4), (',,,,', 4), ('lord', 4), ('mmmm', 4), ('ones', 4), ('huge', 4), ('woot', 4), ('shot', 4), ('team', 4), ('ways', 4), ('beat', 4), ('kent', 4), ('U130', 4), ('U196', 4), ('U219', 4), ('turn', 4), ('lame', 4), ('U123', 4), ('U154', 4), ('U988', 4), ('puff', 4), ('U146', 4), ('U989', 4), ('U117', 4), ('U819', 4), ('U820', 4), ('clap', 3), ('itch', 3), ('guyz', 3), ('U136', 3), ('gold', 3), ('ring', 3), ('isnt', 3), ('U141', 3), ('Only', 3), ('U148', 3), ('Your', 3), ('deal', 3), ('wash', 3), ('U109', 3), ('piff', 3), ('jump', 3), ('band', 3), ('orgy', 3), ('slap', 3), ('soft', 3), ('bend', 3), ('toss', 3), ('amen', 3), ('rain', 3), ('deop', 3), ('roof', 3), ('((((', 3), ('CHAT', 3), ('ahem', 3), ('hola', 3), ('butt', 3), ('imma', 3), ('town', 3), ('hawt', 3), ('2006', 3), ('Elev', 3), ('Wind', 3), ('AKDT', 3), ('lead', 3), ('DING', 3), ('note', 3), ('gawd', 3), ('half', 3), ('mary', 3), ('ello', 3), ('hick', 3), ('wine', 3), ('hiii', 3), ('bare', 3), ('vote', 3), ('Same', 3), ('wack', 3), ('snow', 3), ('hurt', 3), ('move', 3), ('road', 3), ('walk', 3), ('yawn', 3), ('hail', 3), ('nana', 3), ('U106', 3), ('hump', 3), ('elle', 3), ('yada', 3), ('tune', 3), ('hank', 3), ('slow', 3), ('rubs', 3), ('skin', 3), ('died', 3), ('U145', 3), ('swim', 3), ('U163', 3), ('army', 3), ('THAT', 3), ('wazz', 3), ('toes', 3), ('U153', 3), ('golf', 2), ('drew', 2), ('cast', 2), ('Days', 2), ('opps', 2), ('U138', 2), ('plan', 2), ('Just', 2), ('deaf', 2), ('deep', 2), ('phil', 2), ('hmph', 2), ('U155', 2), ('Poor', 2), ('Lies', 2), ('bite', 2), ('mins', 2), ('eats', 2), ('>:->', 2), ('cell', 2), ('cmon', 2), ('wats', 2), ('kind', 2), ('mike', 2), ('whoa', 2), ('dumb', 2), ('park', 2), ('Sure', 2), ('Come', 2), ('O.k.', 2), ('mama', 2), ('Nice', 2), ('hold', 2), ('ohio', 2), ('whip', 2), ('twin', 2), ('burp', 2), ('blew', 2), ('temp', 2), ('corn', 2), ('pool', 2), ('cash', 2), ('ears', 2), ('From', 2), ('porn', 2), ('heal', 2), ('Dang', 2), ('ciao', 2), ('DOES', 2), ('typo', 2), ('Stop', 2), ('eric', 2), ('Drew', 2), ('sore', 2) …
+
+23.	
+>>> for token in text6:
+	if token.isupper():
+		print(token)		
+SCENE
+KING
+ARTHUR
+SOLDIER
+ARTHUR
+I
+SOLDIER
+ARTHUR
+I
+I
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+ARTHUR
+SOLDIER
+[…]
+
+24.	>>> [w for w in set(text6) if  w.endswith('ize') or 'z' in w or 'pt' in w or w.istitle()]
+['And', 'My', 'Saint', 'Death', 'One', 'English', 'Holy', 'Three', 'Fiends', 'Thee', 'She', 'Waa', 'Honestly', 'Make', 'Clark', 'Consult', 'Tim', 'More', 'Picture', 'Hold', 'Most', 'Hiyah', 'Halt', 'zoop', 'What', 'Look', 'Running', 'Packing', 'Fetchez', 'Charge', 'Four', 'Remove', 'Knights', 'Umhm', 'Walk', 'Stop', 'When', 'Man', 'Of', 'Auuuuuuuugh', 'Ni', 'Knight', 'Victory', 'Don', 'Heee', 'Mercea', 'Un', 'Said', 'Put', 'Hic', 'Dis', 'Two', 'Riiight', 'Uh', 'Schools', 'Aaaah', 'Aramaic', 'You', 'Action', 'Ask', 'Aauuuves', 'Bors', 'Iiiives', 'Bridge', 'Enchanter', 'Beast', 'Since', 'Anarcho', 'Chickennn', 'aptly', 'Who', 'Silence', 'The', 'Battle', 'We', 'Pie', 'Doctor', 'Will', 'Bloody', 'Bones', 'zoosh', 'Those', 'Or', 'Umm', 'Lake', 'Joseph', 'Tower', 'Shut', 'Hoo', 'Stand', 'But', 'Hmm', 'Uther', 'Sir', 'Monsieur', 'Til', 'Thy', 'Ho', 'Splendid', 'Quickly', 'Off', 'Mud', 'Himself', 'N', 'Does', 'This', 'Dramatically', 'Nothing', 'Loimbard', 'Heh', 'Never', 'Mind', 'Hya', 'Ewing', 'Zoot', 'Princess', 'Bedwere', 'Almighty', 'Explain', 'On', 'Camelot', 'Ere', 'temptress', 'God', 'Yay', 'Huy', 'Oooh', 'Grail', 'Behold', 'Shall', 'Tell', 'Ooh', 'Hill', 'Aaaaaah', 'Speak', 'Arimathea', 'excepting', 'Thursday', 'Follow', 'Brave', 'Lucky', 'Order', 'Patsy', 'A', 'Book', 'Ha', 'zhiv', 'Psalms', 'Erm', 'Quiet', 'Are', 'Rheged', 'temptation', 'Guards', 'Stay', 'Really', 'Aggh', 'Dappy', 'Oooo', 'Thppppt', 'Fine', 'Too', 'No', 'As', 'zoo', 'Firstly', 'Guy', 'Like', 'Aaah', 'Apples', 'Torment', 'Midget', 'Didn', 'Autumn', 'Away', 'Cider', 'See', 'Run', 'Robinson', 'Hang', 'Once', 'Looks', 'England', 'Oooooooh', 'Summer', 'Piglet', 'Herbert', 'Aaaaugh', 'Bedevere', 'Thank', 'Twenty', 'Morning', 'Nine', 'Supposing', 'All', 'Say', 'Am', 'Pure', 'Agh', 'Wait', 'Your', 'An', 'Message', 'Hey', 'Everything', 'Lord', 'Ninepence', 'Shrubber', 'He', 'Swamp', 'Hiyya', 'Do', 'Chaste', 'Mmm', 'Surely', 'Forward', 'Allo', 'Neee', 'Seek', 'Haw', 'Today', 'Anthrax', 'Oui', 'Could', 'Blue', 'His', 'Lady', 'Bravely', 'That', 'Where', 'Chop', 'Eee', 'Yes', 'Aauuuuugh', 'Prepare', 'Come', 'Together', 'With', 'Divine', 'Iiiiives', 'Galahad', 'Alice', 'Aaaaaaaaah', 'First', 'Ridden', 'Hand', 'W', 'Arthur', 'Attila', 'Aaauggh', 'Brother', 'Help', 'European', 'Chicken', 'Ah', 'Would', 'Court', 'Nu', 'Here', 'France', 'Oh', 'Welcome', 'Providence', 'King', 'Isn', 'Yeaah', 'Yeaaah', 'Jesus', 'Anyway', 'Round', 'Cut', 'Aaaugh', 'Far', 'Pull', 'Leaving', 'Huyah', 'Over', 'Y', 'Be', 'Winston', 'Badon', 'It', 'Bad', 'Wayy', 'Greetings', 'Farewell', 'Ives', 'Well', 'Quite', 'Aaagh', 'May', 'Clear', 'Thpppt', 'Hoa', 'Tall', 'Uugh', 'Ahh', 'Our', 'So', 'Practice', 'By', 'Bring', 'Chapter', 'frozen', 'Pendragon', 'Other', 'Ector', 'Keep', 'Aauuugh', 'Hah', 'Augh', 'Ohh', 'Now', 'Concorde', 'Eternal', 'Old', 'Throw', 'Ages', 'Iesu', 'Quoi', 'Gallahad', 'Gable', 'ptoo', 'Please', 'Unfortunately', 'Great', 'amazes', 'Aagh', 'Get', 'zone', 'Black', 'Hello', 'Alright', 'Try', 'Uhh', 'Camaaaaaargue', 'Bread', 'At', 'Have', 'Woa', 'They', 'Even', 'U', 'Shrubberies', 'Aah', 'Thou', 'Dingo', 'Must', 'Tis', 'Cornwall', 'Defeat', 'Prince', 'Did', 'Let', 'Peng', 'Perhaps', 'To', 'Frank', 'C', 'Britain', 'B', 'Ay', 'Nador', 'Anybody', 'Hooray', 'Course', 'Listen', 'Not', 'Therefore', 'How', 'Silly', 'Lancelot', 'Grenade', 'Armaments', 'Which', 'Between', 'Lie', 'I', 'Until', 'Use', 'Hiyaah', 'Uuh', 'Pin', 'Is', 'Thpppppt', 'Caerbannog', 'Exactly', 'Table', 'Rather', 'Tale', 'Why', 'empty', 'Found', 'Mother', 'Open', 'Right', 'Aaauugh', 'Christ', 'There', 'Hee', 'Five', 'Britons', 'Yeah', 'Spring', 'Hurry', 'For', 'Wood', 'Supreme', 'Burn', 'Father', 'Excuse', 'Saxons', 'French', 'Churches', 'Assyria', 'Good', 'If', 'Winter', 'Very', 'Ecky', 'Gorge', 'Then', 'Excalibur', 'Bravest', 'Thppt', 'Robin', 'Bon', 'Sorry', 'African', 'Huh', 'S', 'Maynard', 'Go', 'Launcelot', 'O', 'True', 'Amen', 'Bristol', 'Shh', 'Antioch', 'Ulk', 'Ayy', 'Build', 'Whoa', 'Meanwhile', 'None', 'Quick', 'Peril', 'Beyond', 'Dennis', 'Hallo', 'Thsss', 'Um', 'Gawain', 'Hm', 'Back', 'Actually', 'Dragon', 'Just', 'Idiom', 'Oooohoohohooo', 'Castle', 'Steady', 'Mine', 'Nay', 'Aauuggghhh', 'Cherries', 'In', 'Forgive', 'Ow', 'Recently', 'Lead', 'Yup', 'Olfin', 'Roger', 'Eh', 'Skip', 'Yapping', 'Crapper', 'Hyy', 'Every', 'Angnor', 'Erbert', 'Aaaaaaaah']
+
+25.	>>> sent = ['she', 'sells', 'sea', 'shells', 'by', 'the', 'sea', 'shore']
+>>> for token in sent:
+if token.startswith('sh'):
+		print (token)
+	elif len(token) > 4:
+		print (token)
+		
+she
+sells
+shells
+Shore
+
+26.	It sums up all the words length
+>>> sum(len(w) for w in text1)
+999044
+>>> len(text1)
+260819
+>>> 999044 / 260819
+3.830411128023649
+
+27.	>>> def vocab_size(text):
+	return len(set(text))
+>>> vocab_size(text1)
+19317
+
+28.	>>> def percentage(count, total):
+	return 100 * count / total
+
+>>> def percent(word, text):
+	return percentage(text.count('word'),len(text))
+
+>>> percent('ARTHUR',text6)
+0.04125655684564154
+
+29.	After wondering for a long time I had to google it :P
+Turns out that the expressing asks if the sent is a subset of a the other text.
+I guess you can use this to look for expressions in different types of text and make a if statement for what to do if this sentence occur?
